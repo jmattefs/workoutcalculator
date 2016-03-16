@@ -1,0 +1,136 @@
+body {
+	background-image: url("a.jpg");
+	background-size: 100%;
+	overflow-x: hidden;
+}
+h1{
+	text-align: center;
+	font-size: 48px;
+	font-family: impact;
+	text-transfrom: uppercase;
+	border-style: ridge;
+	border-width: 4px;
+	margin:30px;
+	color: white;
+	letter-spacing: 5px;
+	border-radius: 20px;
+	text-shadow: 2px 2px 4px red;
+	
+}
+#calculations{
+	position: relative;
+	top: -230px;
+	left: 700px;
+}
+th{
+	background-color: #4B92DB;
+    color: black;
+	font-family: helvetica;
+	
+}
+#mbox{
+	 
+}
+td{
+	font-family: helvetica;
+	
+	
+}
+#inputs{
+	text-align: left;
+	border-style:inset;
+	border-color: white;
+	padding: 20px;
+	margin: 30px;
+	border-radius: 10px;
+}
+#tableOne{
+	border-style: groove;
+	border-color: #00B6F1;
+	background-color: whitesmoke;
+	width: 500px;
+	height: 250px;
+	text-align: center;
+	border-radius: 4px;
+}
+#tableOne tr:nth-child(odd){
+	background-color:#85B7EA;
+}
+#tableOne td{
+	font-weight: bold;
+}
+#tableTwo{
+	border-style: groove;
+	border-color: #00B6F1;
+	background-color: whitesmoke;
+	text-align: center;
+	width: 500px;
+	height: 100px;
+	border-radius: 4px;
+}
+#tableTwo tr:nth-child(odd){
+	background-color:#85B7EA;
+}
+#tableTwo td{
+	font-weight: bold;
+}
+#tableThree{
+	border-style: groove;
+	border-color: #00B6F1;
+	background-color: whitesmoke;
+	text-align: center;
+	width: 297px;
+	position: absolute;
+	margin: 30px;
+	top: 280px;
+	border-radius: 6px;
+	
+}
+#tableThree td{
+	font-weight: bold;
+}
+#Main{
+	
+}
+#buttontd{
+	text-align: left;
+	
+}
+
+button{
+	background-color: #85B7EA; 
+    border-color: white;
+    color: black;
+	text-
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+	font-weight: bold;
+    font-size: 16px;
+	border-radius: 4px;
+	width: 133px;
+	height: 40px;
+}
+button:hover{
+	background-color: #0085CA;
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#fn{
+	text-align: center;
+	font-family: impact;
+	color: white;
+}
+#w{
+	text-align: right;
+	font-family: impact;
+	color: white;
+}
+#m{
+	text-align: right;
+	font-family: impact;
+	color: white;
+}
+#dropdown{
+	text-align: right;
+}

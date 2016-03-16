@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html lang= en>
+		<head>
+			<title> Workout Calculator </title>
+			<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		</head>
+		<body >
+		<h1> Workout Calculator </h1>
+		<table id="inputs">
+			<tr><td id = "fn">Full Name: </td>
+			<td><input type="text" name="name" id="namebox"></td></tr>
+			<tr><td id="w">Weight:</td>
+			<td><input type="text" name="weight" id="weightbox"></td></tr>
+			<tr><td id = "m">Multiplier:</td>
+			<td id ="dropdown"><select name="multiplier" id="mbox">
+				  <option value="1">1x</option>
+				  <option value="2">2x</option>
+				  <option value="3">3x</option>
+				  <option value="4">4x</option>
+				  <option value="5">5x</option></select>
+			</td></tr>
+			<tr><td></td><td id="buttontd"><button onclick="Main(document.getElementById('namebox').value, document.getElementById('weightbox').value, document.getElementById('mbox').value)" id= "Main"> Calculate! </button></td></tr>
+		</table>
+		<br>
+		<br>
+		<div id= "calculations" >
+			<table id = "tableOne">
+				<tr>
+					<th> Letter </th>
+					<th> Workout </th>
+					<th> Calories Burned </th>
+				</tr>
+				
+			</table>
+			<br>
+			<table id = "tableTwo">
+				<tr>
+					<th> Exercise </th>
+					<th> Reps </th>
+					<th> Calories Burned </th>
+				<tr>
+				
+			</table>
+		</div>
+			<br>
+			<table id = "tableThree">
+				<tr>
+					<th> Total Calories Burned </th>
+				</tr>
+
+			</table>
+		
+			
+			<script src="Workout.js"></script>
+		</body>
+	</html>
