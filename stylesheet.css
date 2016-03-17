@@ -10,17 +10,45 @@ h1{
 	text-transfrom: uppercase;
 	border-style: ridge;
 	border-width: 4px;
-	margin:30px;
+	margin:50px;
 	color: white;
 	letter-spacing: 5px;
 	border-radius: 20px;
 	text-shadow: 2px 2px 4px red;
+	background-color: #1D1160;
+	
+	
+}
+h3{
+	font-family: impact;
+	color: white;
+	text-shadow: 2px 2px 4px red;
+	font-size: 25px;
+	position: relative;
+	top: 90px;
+	left: 152px;
+	text-transfrom: uppercase;
+	letter-spacing: 1px;
+	
+	
+	
+}
+#inputdiv{
+	position: relative;
+	width: 500px;
+	height: 185px;
+	margin: 45px;
+	left: -650px;
+	
 	
 }
 #calculations{
 	position: relative;
-	top: -230px;
-	left: 700px;
+	top: -200px;
+	left: 750px;
+	width: 500px;
+	display: none;
+	
 }
 th{
 	background-color: #4B92DB;
@@ -40,18 +68,20 @@ td{
 	text-align: left;
 	border-style:inset;
 	border-color: white;
-	padding: 20px;
-	margin: 30px;
+	background-color: #1D1160;
+	padding: 30px;
+	margin: 100px;
 	border-radius: 10px;
+	width: 500px;
 }
 #tableOne{
 	border-style: groove;
-	border-color: #00B6F1;
+	border-color: red;
 	background-color: whitesmoke;
 	width: 500px;
 	height: 250px;
 	text-align: center;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 #tableOne tr:nth-child(odd){
 	background-color:#85B7EA;
@@ -61,12 +91,12 @@ td{
 }
 #tableTwo{
 	border-style: groove;
-	border-color: #00B6F1;
+	border-color: red;
 	background-color: whitesmoke;
 	text-align: center;
 	width: 500px;
 	height: 100px;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 #tableTwo tr:nth-child(odd){
 	background-color:#85B7EA;
@@ -76,19 +106,20 @@ td{
 }
 #tableThree{
 	border-style: groove;
-	border-color: #00B6F1;
+	border-color: #1D1160;
 	background-color: whitesmoke;
 	text-align: center;
-	width: 297px;
+	width: 500px;
 	position: absolute;
-	margin: 30px;
-	top: 280px;
+	margin: 100px;
+	top: 225px;
 	border-radius: 6px;
 	
 }
 #tableThree td{
 	font-weight: bold;
 }
+
 #Main{
 	
 }
@@ -100,9 +131,10 @@ td{
 button{
 	background-color: #85B7EA; 
     border-color: white;
-    color: black;
-	text-
-    padding: 15px 32px;
+    color: white;
+	background-image: linear-gradient(#4B92DB, blue);
+	position: relative;
+	left: 40px;
     text-align: center;
     text-decoration: none;
 	font-weight: bold;
@@ -110,27 +142,41 @@ button{
 	border-radius: 4px;
 	width: 133px;
 	height: 40px;
+	
+}
+button:after{
+content: '';
+position: absolute;
+top: 2px;
+left: 2px;
+width: calc(100% - 4px);
+height: 50%;
+background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
 }
 button:hover{
 	background-color: #0085CA;
+	background-image: linear-gradient(blue, #4B92DB);
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #fn{
-	text-align: center;
+	text-align: right;
 	font-family: impact;
 	color: white;
+	text-shadow: 2px 2px 4px red;
 }
 #w{
 	text-align: right;
 	font-family: impact;
 	color: white;
+	text-shadow: 2px 2px 4px red;
 }
 #m{
 	text-align: right;
 	font-family: impact;
 	color: white;
+	text-shadow: 2px 2px 4px red;
 }
 #dropdown{
-	text-align: right;
+	text-align: middle;
 }

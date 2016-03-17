@@ -3,24 +3,43 @@
 		<head>
 			<title> Workout Calculator </title>
 			<link rel="stylesheet" type="text/css" href="stylesheet.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+				$("#inputdiv").animate({left: '-50px'}, 'slow');
+					$("#Main").click(function(){
+						$("#calculations").fadeIn("fast", "swing");
+												});			
+														});					
+
+					
+			</script>
 		</head>
 		<body >
 		<h1> Workout Calculator </h1>
-		<table id="inputs">
-			<tr><td id = "fn">Full Name: </td>
-			<td><input type="text" name="name" id="namebox"></td></tr>
-			<tr><td id="w">Weight:</td>
-			<td><input type="text" name="weight" id="weightbox"></td></tr>
-			<tr><td id = "m">Multiplier:</td>
-			<td id ="dropdown"><select name="multiplier" id="mbox">
-				  <option value="1">1x</option>
-				  <option value="2">2x</option>
-				  <option value="3">3x</option>
-				  <option value="4">4x</option>
-				  <option value="5">5x</option></select>
-			</td></tr>
-			<tr><td></td><td id="buttontd"><button onclick="Main(document.getElementById('namebox').value, document.getElementById('weightbox').value, document.getElementById('mbox').value)" id= "Main"> Calculate! </button></td></tr>
-		</table>
+		<div id="inputdiv">
+			<h3>ENTER THE FOLLOWING INFORMATION</h3>
+				<table id="inputs">
+					<tr><td id = "fn">Full Name:  </td>
+					<td><input type="text" name="name" id="namebox"></td></tr>
+					<tr><td id="w">Weight:   </td>
+					<td><input type="text" name="weight" id="weightbox"></td></tr>
+					<tr><td id = "m">Multiplier:   </td>
+					<td id ="dropdown"><select name="multiplier" id="mbox">
+						  <option value="1">1x</option>
+						  <option value="2">2x</option>
+						  <option value="3">3x</option>
+						  <option value="4">4x</option>
+						  <option value="5">5x</option></select>
+					</td></tr>
+					<tr><td></td><td id="buttontd"><button onclick="Main(document.getElementById('namebox').value, document.getElementById('weightbox').value, document.getElementById('mbox').value)";  id= "Main"> Calculate! </button></td></tr>
+				</table>
+				<table id = "tableThree">
+					<tr>
+						<th> Total Calories Burned </th>
+					</tr>
+				</table>
+		</div>
 		<br>
 		<br>
 		<div id= "calculations" >
@@ -43,12 +62,8 @@
 			</table>
 		</div>
 			<br>
-			<table id = "tableThree">
-				<tr>
-					<th> Total Calories Burned </th>
-				</tr>
+		
 
-			</table>
 		
 			
 			<script src="Workout.js"></script>

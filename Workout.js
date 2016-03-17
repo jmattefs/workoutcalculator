@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 function TableOne(name, weight, multiplier){
 
 	var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
@@ -105,7 +104,7 @@ function TableOne(name, weight, multiplier){
 				var cell2 = row.insertCell(1);
 				cell2.innerHTML = (amount[j]*multiplier)+ " " + exercise[j]
 				var cell3 = row.insertCell(2);
-				cell3.innerHTML = cb*multiplier;
+				cell3.innerHTML = (cb*multiplier).toFixed(2);
 				 
 			}
 		}			
@@ -273,9 +272,9 @@ function TableTwo(name, weight, multiplier){
 				var cell1 = row.insertCell(0);
 				cell1.innerHTML = z;
 				var cell2 = row.insertCell(1);
-				cell2.innerHTML = (totals[z][0])*multiplier;
+				cell2.innerHTML = ((totals[z][0])*multiplier).toFixed(2);
 				var cell3 = row.insertCell(2);
-				cell3.innerHTML = (totals[z][1])*multiplier;
+				cell3.innerHTML = ((totals[z][1])*multiplier).toFixed(2);
 				
 				TC = TC + totals[z][1];
 		}	
